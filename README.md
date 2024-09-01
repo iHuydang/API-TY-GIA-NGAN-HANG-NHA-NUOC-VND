@@ -16,3 +16,7 @@ Dự án này cung cấp một giải pháp đơn giản để lấy và hiển 
    ```bash
    composer require ihuydang/utils-exchange-rates
    
+$parse = $vcb->parseDataExchangeRates();
+echo $parse->toJson();
+$vcb = new \iHuydang\Utils\ExchangeRates\Vietcombank();
+require_once __DIR__ . '/vendor/autoload.php';
