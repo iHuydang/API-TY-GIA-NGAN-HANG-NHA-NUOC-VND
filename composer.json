@@ -1,0 +1,30 @@
+{
+    "name": "iHuydang/utils-exchange-rates",
+    "type": "library",
+    "description": "Utils API: Get Exchange Rates",
+    "keywords": [
+        "utils",
+        "api"
+    ],
+    "homepage": "https://github.com/iHuydang/utils-exchange-rates",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "iHuydang",
+            "email": "huydanginvest@gmail.com",
+            "homepage": "https://sbv.gov.vn",
+            "role": "IT - Software Engineer (Core Banking)"
+        }
+    ],
+    "require": {
+        "php": ">=5.6",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "ext-xml": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "iHuydang\\Utils\\ExchangeRates\\": "src/"
+        }
+    }
+}
