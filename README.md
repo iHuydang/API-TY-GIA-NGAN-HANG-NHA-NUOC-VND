@@ -1,16 +1,18 @@
-# utils-exchange-rates-maste
- Dữ liệu từ website ngân hàng Vietcombank: https://portal.vietcombank.com.vn/Personal/TG/Pages/ty-gia.aspx
-<?php
-require_once __DIR__ . '/vendor/autoload.php';
-$vcb = new \iHuydang\Utils\ExchangeRates\Vietcombank();
+# Tỷ Giá Hối Đoái VND - Vietcombank API
 
-// Parse dữ liệu từ API ngân hàng
-$parse = $vcb->parseDataExchangeRates();
-// Hiển thị dữ liệu dạng JSON
-echo $parse->toJson();
+## Giới Thiệu
 
-// Hiển thị dữ liệu thô
+Dự án này cung cấp một giải pháp đơn giản để lấy và hiển thị tỷ giá hối đoái từ Ngân hàng Vietcombank. Sử dụng mã nguồn PHP, bạn có thể truy cập dữ liệu tỷ giá và chuyển đổi nó thành định dạng JSON để dễ dàng sử dụng trong các ứng dụng của bạn.
 
-echo "<pre>";
-print_r($parse->getResponse());
-echo "</pre>";
+## Cài Đặt
+
+1. **Yêu Cầu:**
+   - PHP 7.0 trở lên
+   - Composer (để quản lý các phụ thuộc)
+
+2. **Cài Đặt Các Phụ Thuộc:**
+
+   Sử dụng Composer để cài đặt các phụ thuộc cần thiết:
+   ```bash
+   composer require ihuydang/utils-exchange-rates
+   
