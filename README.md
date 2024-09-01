@@ -1,4 +1,4 @@
-# Tỷ Giá Hối Đoái VND - Vietcombank API
+# Tỷ Giá Hối Đoái VND - Vietcombank API - Bank programmer IHuydang
 
 ## Giới Thiệu
 
